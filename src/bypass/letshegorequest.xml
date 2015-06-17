@@ -1,0 +1,119 @@
+Request SOAP Message:<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:data="http://com/tcs/channels/ussd/data">
+    <SOAP-ENV:Header>
+        <data:Authentication>
+            <data:UserId>USSDChannelUser</data:UserId>
+            <data:Password>bYIezgwgBfAdr6b6z1bCrQ==</data:Password>
+        </data:Authentication>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <data:miniStatement>
+            <data:CustomerNumber>7010136050</data:CustomerNumber>
+            <data:MiniStatementRequest>
+                <data:AccountNumber>500000123</data:AccountNumber>
+            </data:MiniStatementRequest>
+        </data:miniStatement>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+
+Response SOAP Message:<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <miniStatementResponse xmlns="http://com/tcs/channels/ussd/data">
+            <return>
+                <status>SUCCESS</status>
+                <MiniStatementList>
+                    <MiniStatementData>
+                        <Date>2015-05-10+02:00</Date>
+                        <Description>DIRECT DEBIT        </Description>
+                        <CreditAmount>0.0</CreditAmount>
+                        <DebitAmount>101.0</DebitAmount>
+                        <BalanceAmount>1.999309875E7</BalanceAmount>
+                        <Currency>MZN</Currency>
+                    </MiniStatementData>
+                    <MiniStatementData>
+                        <Date>2015-05-10+02:00</Date>
+                        <Description>DR TRF DEP A/C      </Description>
+                        <CreditAmount>0.0</CreditAmount>
+                        <DebitAmount>500.0</DebitAmount>
+                        <BalanceAmount>1.999319975E7</BalanceAmount>
+                        <Currency>MZN</Currency>
+                    </MiniStatementData>
+                    <MiniStatementData>
+                        <Date>2015-05-10+02:00</Date>
+                        <Description>DR TRF DEP A/C      </Description>
+                        <CreditAmount>0.0</CreditAmount>
+                        <DebitAmount>100.0</DebitAmount>
+                        <BalanceAmount>1.999369975E7</BalanceAmount>
+                        <Currency>MZN</Currency>
+                    </MiniStatementData>
+                </MiniStatementList>
+            </return>
+        </miniStatementResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+Request SOAP Message:<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:data="http://com/tcs/channels/ussd/data">
+    <SOAP-ENV:Header>
+        <data:Authentication>
+            <data:UserId>USSDChannelUser</data:UserId>
+            <data:Password>bYIezgwgBfAdr6b6z1bCrQ==</data:Password>
+        </data:Authentication>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <data:balanceEnquiry>
+            <data:CustomerNumber>7010136050</data:CustomerNumber>
+            <data:BalanceEnquiryRequest>
+                <data:AccountNumber>500000123</data:AccountNumber>
+            </data:BalanceEnquiryRequest>
+        </data:balanceEnquiry>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:data="http://com/tcs/channels/ussd/data">
+    <SOAP-ENV:Header>
+        <data:Authentication>
+            <data:UserId>USSDChannelUser</data:UserId>
+            <data:Password>bYIezgwgBfAdr6b6z1bCrQ==</data:Password>
+        </data:Authentication>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <data:miniStatement>
+            <data:CustomerNumber>7010136050</data:CustomerNumber>
+            <data:MiniStatementRequest>
+                <data:AccountNumber>500000123</data:AccountNumber>
+            </data:MiniStatementRequest>
+        </data:miniStatement>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+
+Response SOAP Message:<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <balanceEnquiryResponse xmlns="http://com/tcs/channels/ussd/data">
+            <return>
+                <status>SUCCESS</status>
+                <AccountNumber>500000123</AccountNumber>
+                <BalanceAmount>1.999259875E7</BalanceAmount>
+                <Currency>MZN</Currency>
+            </return>
+        </balanceEnquiryResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <termDepositDetailsResponse xmlns="http://com/tcs/channels/ussd/data">
+            <return>
+                <status>SUCCESS</status>
+                <AccountNumber>500000123</AccountNumber>
+                <DepositAmount>1.962328275E7</DepositAmount>
+                <InterestRate>6.0</InterestRate>
+            </return>
+        </termDepositDetailsResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
+
